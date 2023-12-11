@@ -3,18 +3,13 @@
     "builds": [
         {
             "src": "/CTFd/users.py",
-            "use": "@vercel/python",
-            "memory": 3008,
-            "maxDuration": 30
+            "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/CTFd/users.py",
-            "memory": 3008,
-            "maxDuration": 30
-        
+            "dest": "/CTFd/users.py"
         }
     ]
 }

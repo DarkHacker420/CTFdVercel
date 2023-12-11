@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "/CTFd/users.py",
+            "src": "./index.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/CTFd/users.py"
+            "dest": "./index.py"
         }
     ]
 }
